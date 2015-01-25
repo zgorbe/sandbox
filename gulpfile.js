@@ -13,6 +13,7 @@ var generatedPath = 'src/main/webapp/generated/',
 
 gulp.task('styles', function () {
     return gulp.src(resourcesPath + '/**/*.scss')
+    .pipe($.concat('application.scss'))
     .pipe($.sass())
     .pipe(gulp.dest(generatedPath));
 });
@@ -31,12 +32,8 @@ gulp.task('scripts', function () {
  * The clean task.
  */
 gulp.task('clean', function () {
-    return gulp.src(
-        [
-            generatedPath + '**/*.css', generatedPath + '**/*.js'
-        ],
-        { read: false }
-    ).pipe($.rimraf());
+    return gulp.src(generatedPath, { read: false })
+        .pipe($.clean());
 });
 
 /**
