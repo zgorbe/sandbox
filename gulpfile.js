@@ -13,7 +13,7 @@ var generatedPath = 'src/main/webapp/generated/',
 
 gulp.task('styles', function () {
     return gulp.src(resourcesPath + '/**/*.scss')
-    .pipe($.concat('application.scss'))
+    .pipe($.concat('styles/application.scss'))
     .pipe($.sass())
     .pipe(gulp.dest(generatedPath));
 });
