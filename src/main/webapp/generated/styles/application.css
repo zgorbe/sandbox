@@ -1,8 +1,19 @@
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%; }
+
+html {
+  height: 100%; }
+
 footer {
-  background-color: LightGray; }
+  background-color: LightGray;
+  flex: 0 0 auto; }
 
 header {
-  background-color: LightSlateGray; }
+  background-color: LightSlateGray;
+  flex: 0 0 auto; }
 
 main {
-  background-color: LightSkyBlue; }
+  background-color: LightSkyBlue;
+  flex: 1 0 auto; }
