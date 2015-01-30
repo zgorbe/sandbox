@@ -15,6 +15,10 @@ gulp.task('styles', function () {
     return gulp.src(resourcesPath + '/**/*.scss')
     .pipe($.concat('styles/application.scss'))
     .pipe($.sass())
+    .pipe($.autoprefixer({
+        browsers: ['last 5 versions'],
+        cascade: false
+    }))
     .pipe(gulp.dest(generatedPath));
 });
 
