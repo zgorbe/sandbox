@@ -1,4 +1,33 @@
 header {
-    background-color: LightSlateGray;
+    background-color: #778899;
     flex: 0 0 auto;
+
+    nav {
+    	display: flex;
+    	justify-content: space-between;
+    }
+    
+    ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		list-style: none;
+
+		a {
+		    padding: 20px 10px;
+		    text-decoration: none;
+		    text-transform: uppercase;
+		    font-weight: 700;
+		    display: flex;
+		    align-items: flex-start;
+		    color: #A9DFFA;
+		    &:hover, &:focus {
+		    	background: #A9DFFA;
+		    	color: #778899;
+		    }
+		}
+  	}
+  	.logo {
+  		margin: 20px;
+  	}
 }

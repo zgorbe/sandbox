@@ -8,7 +8,17 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-	<header>Header</header>
+	<header>
+		<nav>
+			<div class="logo"><a href="/">LOGO</a></div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Sandbox</a></li>
+				<li><a href="#">Flexible box</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
 	<main>Welcome</main>
 	<footer>Footer</footer>
 </body>

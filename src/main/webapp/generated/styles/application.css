@@ -48,7 +48,6 @@ h5, h6 {
   font-size: 1em; }
 
 a, a:link, a:visited {
-  color: #11bad3;
   text-decoration: none;
   border: none; }
 
@@ -81,14 +80,55 @@ footer {
   flex: 0 0 auto; }
 
 header {
-  background-color: LightSlateGray;
+  background-color: #778899;
   -webkit-box-flex: 0;
   -webkit-flex: 0 0 auto;
   -ms-flex: 0 0 auto;
   flex: 0 0 auto; }
+  header nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+  header ul {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    list-style: none; }
+    header ul a {
+      padding: 20px 10px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -webkit-align-items: flex-start;
+      -ms-flex-align: start;
+      align-items: flex-start;
+      color: #A9DFFA; }
+      header ul a:hover, header ul a:focus {
+        background: #A9DFFA;
+        color: #778899; }
+  header .logo {
+    margin: 20px; }
 
 main {
-  background-color: LightSkyBlue;
+  background-color: #A9DFFA;
   -webkit-box-flex: 1;
   -webkit-flex: 1 0 auto;
   -ms-flex: 1 0 auto;
