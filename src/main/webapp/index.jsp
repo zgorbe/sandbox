@@ -13,13 +13,13 @@
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Sandbox</a></li>
                 <li><a href="#">Flexible box</a></li>
+                <li><a href="#">Grid</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>Welcome</main>
+    <main><h2>Vertical centering the welcome content</h2></main>
     <footer>Footer</footer>
 </body>
 </html>
