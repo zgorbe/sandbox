@@ -1,4 +1,9 @@
 main {
     background-color: #A9DFFA;
     flex: 1 0 auto;
+
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
