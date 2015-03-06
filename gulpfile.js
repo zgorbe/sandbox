@@ -22,12 +22,22 @@ gulp.task('styles', function () {
     .pipe(gulp.dest(generatedPath));
 });
 
+gulp.task('script-libs', function () {
+    return gulp.src([
+            resourcesPath + 'scripts/libs/angular.min.js', 
+            resourcesPath + 'scripts/libs/angular-route.min.js'
+            ])
+        .pipe($.concat('scripts/application-libs.js'))
+        .pipe(gulp.dest(generatedPath));
+});
+
 gulp.task('scripts', function () {
-    return gulp.src(resourcesPath + '/**/*.js')
+    return gulp.src(resourcesPath + 'scripts/application/**/*.js')
+        .pipe($.concat('scripts/application.js'))
         .pipe($.jshint())
         .pipe($.jshint.reporter(require('jshint-stylish')))
 //        .pipe($.jshint.reporter('fail'))  // uncomment to make the build fail when their is a warning
-        .pipe($.rename({suffix: '.min'}))
+//        .pipe($.rename({suffix: '.min'}))
         .pipe($.uglify())
         .pipe(gulp.dest(generatedPath));
 });
@@ -43,7 +53,7 @@ gulp.task('clean', function () {
 /**
  * The build task just executes 'styles' and 'scripts' tasks
  */
-gulp.task('build', ['styles', 'scripts']);
+gulp.task('build', ['styles', 'script-libs', 'scripts']);
 
 /**
  * Executing just 'gulp' will execute 'clean' and start 'build' tasks

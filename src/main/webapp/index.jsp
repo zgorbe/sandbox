@@ -21,5 +21,7 @@
     </header>
     <main>Welcome</main>
     <footer>Footer</footer>
+    <script type="text/javascript" src="/generated/scripts/application-libs.js"></script>
+    <script type="text/javascript" src="/generated/scripts/application.js"></script>
 </body>
 </html>
